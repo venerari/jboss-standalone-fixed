@@ -27,7 +27,8 @@
 
 - name: Copying JBOSS Modules file
   copy: 
-     src: /apps/wildfly/ansible-examples-master/jboss-standalone/roles/jboss-standalone/templates/jboss-modules.jar
+     #src: /apps/wildfly/ansible-examples-master/jboss-standalone/roles/jboss-standalone/templates/jboss-modules.jar
+     src: jboss-modules.jar
      dest: /usr/share/jboss-as/
 
 

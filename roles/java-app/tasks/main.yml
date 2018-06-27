@@ -1,7 +1,7 @@
 ---
 
 - name: Creates directory
-  file: path=/tmp/jboss state=directory
+  file: path=/tmp/jboss state=directory mode=0777
 
 - name: Copy application WAR file to host
   copy: src=jboss-helloworld.war dest=/tmp/jboss
